@@ -1,0 +1,6 @@
+pod-build/
+*~
+*.touch
+*.tar.*
+nspr-4.10.3/
+
