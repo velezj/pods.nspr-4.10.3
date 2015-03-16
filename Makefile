@@ -72,7 +72,7 @@ unarchive:
 build-source:
 	@echo "\n Building $(POD_NAME) \n"
 	@mkdir -p pod-build
-	cd pod-build && ../$(POD_NAME)/nspr/configure --prefix=$(BUILD_PREFIX)
+	cd pod-build && ../$(POD_NAME)/nspr/configure --prefix=$(BUILD_PREFIX) --enable-64bit
 	cd pod-build && make
 	@touch built.touch
 
